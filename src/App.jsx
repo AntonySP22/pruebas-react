@@ -1,4 +1,4 @@
-import React from "react";
+import "react";
 import './App.css';
 import Form from "./components/Form";
 

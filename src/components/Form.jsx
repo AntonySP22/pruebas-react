@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import  {useState} from "react";
 import Todo from "./Todo";
 
 const Form = () => {
@@ -9,9 +9,9 @@ const Form = () => {
         { todo: 'Todo 3' }
     ])
 
-    
+
     const handleChange = e => setTodo({[e.target.name]: e.target.value })
-    const handleClick = e => {
+    const handleClick = () => {
         if (Object.keys(todo).length === 0 || todo.todo.trim() === '') {
             alert('El campo no puede estar vacio')
             return
